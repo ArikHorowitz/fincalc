@@ -5,7 +5,276 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     </head>
     <body>
-        <div>hello </div>
+        <div class="container"></div>
+            <h1 class="text-center mt-5">Financial Calculator</h1>
+            <div class="row">
+                <div class="offset-md-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                           <input
+                            style="height: 200px"
+                            id="calc-display" 
+                            readonly
+                            class="form-control form-control-lg" 
+                            type="text" 
+                            aria-label=".form-control-lg example">
+                        </div>
+                        <!--1 row functions-->
+                        <div class="row gx-1" >
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light" w-100 mt-2 border>
+                                    <-                                    
+                                </button>   
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    ->                                   
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                   ^                                   
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                   down                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    ESC                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    SOLVE                                    
+                                </button>
+                            </div>
+                        </div>
+                        <!--2 row functions-->
+                        <div class="row gx-1" >
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light" w-100 mt-2 border>
+                                    SMPL                                    
+                                </button>   
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    CMPD                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    CASH                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    AMRT                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    COMP                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    STAT                                    
+                                </button>
+                            </div>
+                        </div>
+                         <!--3 row functions-->
+                        <div class="row gx-1" >
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light" w-100 mt-2 border>
+                                    cnvr                                    
+                                </button>   
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    cost                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    days                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    e                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    10x                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    ^                                    
+                                </button>
+                            </div>
+                        </div>
+                        <!--4 row functions-->
+                        <div class="row gx-1" >
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light" w-100 mt-2 border>
+                                    (-)                                    
+                                </button>   
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    rcl                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    (                                       
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    )                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    ctlg                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    m+                                    
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <!--1 row num-->
+                        <div class="row gx-1" >
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light" w-100 mt-2 border>
+                                    7                                    
+                                </button>   
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    8                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    9                                    
+                                </button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    DEL                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    AC                                    
+                                </button>
+                            </div>
+                            
+                        </div>
+                        <!--2 row num-->
+                        <div class="row gx-1" >
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light" w-100 mt-2 border>
+                                    4                                    
+                                </button>   
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    5                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    6                                    
+                                </button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    X                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    /                                    
+                                </button>
+                            </div>
+                            
+                        </div>
+                        <!--3 row num-->
+                        <div class="row gx-1" >
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light" w-100 mt-2 border>
+                                    1                                    
+                                </button>   
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    2                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    3                                    
+                                </button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    +                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    -                                    
+                                </button>
+                            </div>
+                            
+                        </div>
+                        <!--4 row num-->
+                        <div class="row gx-1" >
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light" w-100 mt-2 border>
+                                    0                                    
+                                </button>   
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    .                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    x10                                    
+                                </button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    ANS                                    
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-light"  w-100 mt-2 border>
+                                    EXE                                    
+                                </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
